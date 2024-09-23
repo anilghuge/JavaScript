@@ -139,7 +139,8 @@
 ### Embedded JavaScript :
 - JavaScript function are kept in a <script> container and can be accessed from any element.
 - You can reuse the functions.
-- The script conatiner can be in <head> or <body>
+- The script container can be in <head> or <body>
+- You have to define function in <script> container
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -159,9 +160,9 @@
     <button onclick="PrintPage()">Print Page</button>
 </body>
 </html>
-
 ```
-
-
-
+- it is slower when compared to inline.
+- FAQ : what is difference between script in head and body?
+> Ans: Script in head section is intended to load into browser menory and later accessed by page when ever required.  
+> Script in body section is instended to load into page directly ,it is not in memory of browser.
 
