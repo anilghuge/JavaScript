@@ -1,7 +1,6 @@
 function bodyload(){
-   pic.src="public/images/DOM_Hierarchy.png";
-   pic.width=300;
-
-   frmRegsiter.btnRegister.value="Register"
-   frmLogin.btnLogin.value="Login"
+   document.querySelector("img").src="public/images/DOM_hierarchy.png";
+   document.querySelector("#btnRegister").value="Regsiter";
+   document.querySelector(".btn-login").value="Login";
+   document.querySelector("nav div img").src="public/images/DOM_hierarchy.png";
 }
