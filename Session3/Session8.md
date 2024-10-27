@@ -83,6 +83,45 @@ function bodyload(){
   }
 }
 ```
+```
+index.html
+----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script type="text/javascript" src="./src/script/index.js"></script>
+</head>
+<body >
+  <button onclick="CreateFolder()">Create Folder</button>
+  <p></p>
+</body>
+</html>
+
+index.js
+---------
+function CreateFolder(){
+  folderName=prompt("Enter Folder Name");
+  if(folderName==""){
+    alert("Folder name can't be empty");
+  }else if(folderName==null){
+    alert("You Canceled")
+  }else{
+    document.querySelector("p").innerHTML+="Folder Created:"+folderName+"<br>"
+  }
+}
+```
+
+### Form Input Elements
+- You can accept input fromuser by using various from elements
+- textbox
+- password
+- checkbox
+- dropbox
+- listbox
+- number,range,radio,etc.
+-
 
 
 
