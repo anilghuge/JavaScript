@@ -121,7 +121,40 @@ function CreateFolder(){
 - dropbox
 - listbox
 - number,range,radio,etc.
--
+```
+index.html
+----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script type="text/javascript" src="./src/script/index.js"></script>
+</head>
+<body>
+  <input type="text" name="" id="FolderName" placeholder="Folder Name"> <button onclick="CreateFolder()">Create Folder</button>
+  <div id="Error" style="color: red"></div>
+  <p></p>
+</body>
+</html>
+
+index.js
+-------
+function CreateFolder(){
+ let folderTextBox=document.getElementById("FolderName");
+ let error= document.getElementById("Error");
+ if (folderTextBox.value===""){
+   error.innerHTML="Folder Name Required";
+ }else{
+   document.querySelector("p").innerHTML+=folderTextBox.value+"<br>";
+   folderTextBox.value="";
+   error.innerHTML="";
+ }
+
+}
+```
+
+
 
 
 

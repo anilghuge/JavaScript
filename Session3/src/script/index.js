@@ -1,5 +1,12 @@
 function CreateFolder(){
-  folderName=document.getElementById("FolderName").value;
-  document.querySelector("p").innerHTML+=folderName+"<br>"
-  document.getElementById("FolderName").value="";
+ let folderTextBox=document.getElementById("FolderName");
+ let error= document.getElementById("Error");
+ if (folderTextBox.value===""){
+   error.innerHTML="Folder Name Required";
+ }else{
+   document.querySelector("p").innerHTML+=folderTextBox.value+"<br>";
+   folderTextBox.value="";
+   error.innerHTML="";
+ }
+
 }
