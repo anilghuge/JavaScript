@@ -22,3 +22,6 @@ Explore the various methods JavaScript uses to manipulate HTML elements, includi
 
 ## Session 7: JavaScript Output Techniques
 Learn the different methods for displaying output in JavaScript, including `console.log`, alerts, and DOM manipulation.
+
+## Session 8: JavaScript Input Methods
+Learn about various methods in JavaScript for taking input from the user and handling it.
