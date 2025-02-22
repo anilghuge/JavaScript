@@ -25,3 +25,6 @@ Learn the different methods for displaying output in JavaScript, including `cons
 
 ## Session 8: JavaScript Input Methods
 Learn about various methods in JavaScript for taking input from the user and handling it.
+
+## Session 9: JavaScript Input Methods - Form 
+Learn Form various methods in javascript
