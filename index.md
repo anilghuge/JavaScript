@@ -28,3 +28,9 @@ Learn about various methods in JavaScript for taking input from the user and han
 
 ## Session 9: JavaScript Input Methods - Form 
 Learn Form various methods in javascript
+
+## Session 10 : JavaScript Variable - var,let,const
+Learn Variable in Javascript - var,let,const
+
+## Session 11 : JavaScript Variable rules,Global Variable,De-strcturing variable
+Learn Variable rules of variable,Global variable,destructuring variable
