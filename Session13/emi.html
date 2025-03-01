@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .box{
+            background-color: white;
+            box-shadow: 6px 6px 3px gray;
+            padding: 20px;
+        }
+    </style>
+    <script type="text/javascript" src="./src/script/emi.js"></script>
+</head>
+<body class="container-fluid">
+
+<h1>Personal Loan EMI Calculator</h1>
+
+<div class="box">
+    <div class="row">
+        <div class="col">
+            <label for="amount">Amount you need &#8377;&nbsp</label><input type="text" size="10" id="amount" onchange="AmountTextBoxChanged()">
+        </div>
+
+        <div class="col">
+            <label for="for">for&nbsp</label><input type="text" size="2" id="for" onchange="YearTextBoxChanged()"> years
+        </div>
+
+        <div class="col">
+            <label for="interest">interest rate&nbsp</label><input type="text" size="4" id="interest" onchange="RateTextBoxChanged()">&nbsp%
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col">
+            <div class="d-flex">
+                <span>&#8377; 50,000</span>
+                <label>
+                    <input type="range"  id="rangeAmount"   onchange="AmountChange()"    min="50000" max="1000000" value="50000" class="form-range" style="width: 150px">
+                </label>
+                    <span>&#8377;10,00,000</span>
+            </div>
+        </div>
+        <div class="col">
+            <div class="d-flex">
+                <span>1</span>
+                <label>
+                    <input type="range" id="rangeYear"  onchange="YearChange()"  min="1" max="5" class="form-range" value="1" style="width: 150px">
+                </label>
+                 <span>5</span>
+            </div>
+        </div>
+        <div class="col">
+            <div class="d-flex">
+                <span>10.25%</span>
+                <label>
+                    <input type="range" id="rangerate" onchange="RateChange()" min="10.25" max="18.25" step="0.01" value="0.1" class="form-range" style="width: 150px">
+                </label>
+                <span>18.25%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col text-center">
+            <button type="button" class="btn btn-primary" id="calculate" onclick="CalculateClick()">Calculate</button>
+        </div>
+    </div>
+</div>
+<p class="mt-3 text-center" id="result" style="font-size: 30px"></p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        function bodyload(){
+            var yourWeight=parseInt( prompt("Enter you weight"));
+        var yourStatus=document.getElementById("YourStatus");
+
+        if(yourWeight<53){
+            yourStatus.style.marginLeft="200px";
+        }else if(yourWeight>54 && yourWeight<70){
+            yourStatus.style.marginLeft="600px";
+        }
+        }
+    </script>
+</head>
+<body class="container-fluid" onload="bodyload()">
+    <h2>BMI Status</h2>
+    <div class="progress">
+        <div class="progress-bar bg-info me-1" style="width: 400px;">
+            Underweight below < 53 kg
+        </div>
+
+        <div class="progress-bar bg-success me-1" style="width: 400px;">
+           nornal weight  54 kg to 70 kg
+        </div>
+
+        <div class="progress-bar bg-warning me-1" style="width: 400px;">
+            overwieght 70kg to 86 kg
+        </div>
+
+        <div class="progress-bar bg-danger" style="width: 400px;">
+            above 86kg
+        </div>
+
+    </div>
+
+    <div>
+        <div id="YourStatus"> 
+            <span class="bi bi-caret-down-fill"></span>
+            <div>You</div>
+        </div>
+    </div>
+</body>
+</html>

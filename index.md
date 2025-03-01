@@ -34,3 +34,9 @@ Learn Variable in Javascript - var,let,const
 
 ## Session 11 : JavaScript Variable rules,Global Variable,De-strcturing variable
 Learn Variable rules of variable,Global variable,destructuring variable
+
+## Session 12 : Javascript Datatype
+Learn primitive data type
+
+## Session 13 : Create EMI,BMI CalCulator
+Learn Number data Type
