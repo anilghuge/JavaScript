@@ -40,3 +40,6 @@ Learn primitive data type
 
 ## Session 13 : Create EMI,BMI CalCulator
 Learn Number data Type
+
+## Session 14 : String Data Type
+Learn Double Quotes "",Single Quotes "",Backtick``,Data binding expression ${},somw String formatting methods

@@ -1,0 +1,7 @@
+- String Formatting
+ - a) String Formatting methods
+ - b) style
+ - c) class
+ - example in session 14
+ - name.style.attributeName=value;
+ - name.className=cssClassName;
