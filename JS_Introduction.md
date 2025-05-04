@@ -1,36 +1,36 @@
 When rendering a webpage, the browser creates several key tree structures to handle the HTML, CSS, and JavaScript code. Each tree serves a specific purpose in the rendering process. Here are the main trees involved:
 
-### 1. DOM Tree (Document Object Model)
+### 1. **DOM Tree (Document Object Model)**
    - ****Purpose****: Represents the structure of the HTML document.
    - ****Details****: The DOM tree is a hierarchical representation of the HTML elements in the document. Each HTML element becomes a node in the DOM tree. The tree includes all elements, including non-visual elements like `<head>`, `<script>`, etc.
    - ****Interaction****: JavaScript can interact with and manipulate the DOM tree dynamically, causing changes to the content or structure of the page.
 
-### 2. **CSSOM Tree (CSS Object Model)****
+### 2. **CSSOM Tree (CSS Object Model)**
    - ****Purpose****: Represents the styles applied to the HTML elements.
    - ****Details****: The CSSOM tree is created by parsing the CSS files associated with the HTML document. It includes all the style rules and information about how they apply to the elements in the DOM tree.
    - ****Interaction****: The CSSOM tree can be dynamically modified by JavaScript, affecting the styling of the page.
 
-### 3. **Render Tree****
+### 3. **Render Tree**
    - ****Purpose****: Combines the DOM and CSSOM trees to create a visual representation of the document.
    - ****Details****: The render tree contains only the elements that are visible on the page, along with the computed styles. It excludes non-visual elements like `<head>` or elements with `display: none;`.
    - ****Interaction****: The render tree is used for layout calculations and painting the content to the screen.
 
-### 4. **Layout Tree****
+### 4. **Layout Tree**
    - ****Purpose****: Determines the exact position and size of each element.
    - ****Details****: After the render tree is created, the browser calculates the layout of the page. This involves determining the geometry of each element (e.g., width, height, position) based on the render tree and viewport size. The layout tree is often considered an extension or part of the render tree.
    - ****Interaction****: Any changes to the DOM or CSSOM can trigger a re-layout, leading to potential performance issues if not managed carefully.
 
-### 5. **Accessibility Tree****
+### 5. **Accessibility Tree**
    - ****Purpose****: Represents the accessibility structure of the document.
    - ****Details****: The accessibility tree is derived from the DOM tree and is used by assistive technologies like screen readers. It provides a semantic representation of the document, including roles, states, and properties that help users with disabilities interact with the page.
    - ****Interaction****: This tree is often invisible to developers but can be influenced by proper use of ARIA (Accessible Rich Internet Applications) attributes and semantic HTML.
 
-### 6. **Compositing Layers****
+### 6. **Compositing Layers**
    - ****Purpose****: Organizes parts of the page into layers for efficient rendering.
    - ****Details****: During the rendering process, the browser may split the page into multiple layers to optimize the painting and compositing process. These layers are then combined to produce the final image that is displayed on the screen.
    - ****Interaction****: Complex animations, 3D transforms, and certain CSS properties can cause elements to be placed in their own layers. This is crucial for optimizing performance, especially in animations.
 
-### Summary of Trees:**
+### **Summary of Trees:**
 1. ****DOM Tree****: Structure of the HTML document.
 2. ****CSSOM Tree****: Styling information.
 3. ****Render Tree****: Combination of DOM and CSSOM for visual output.
